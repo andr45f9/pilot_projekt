@@ -1,0 +1,22 @@
+/*Nulstilling af nogle settings*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*---------------------------*/
+
+/*Grid strukturen*/
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+}
+section {
+  grid-column: 2/3;
+}
+/*---------------------------*/
