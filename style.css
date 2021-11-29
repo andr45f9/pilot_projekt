@@ -95,6 +95,15 @@ hr.skift_hr {
 }
 /*---------------------------*/
 
+/*Styling af sections@*/
+#first_section {
+  background-image: url(photos/bike.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-right: 1rem;
+}
+/*---------------------------*/
+
 /*Alt Media@*/
 @media (max-width: 900px) {
   h1 {
