@@ -87,11 +87,11 @@ button {
 
 /*Til toggle af knappen@*/
 body.skift_farve {
-  background-color: #91bed4;
+  background-color: #3ca2a6;
 }
 
 hr.skift_hr {
-  border: 1px solid #d9e8f5;
+  border: 1px solid #398a8d;
 }
 /*---------------------------*/
 
@@ -104,10 +104,58 @@ hr.skift_hr {
 }
 /*---------------------------*/
 
+/*Styling af billederne@*/
+
+.billede_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+
+.img1 {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.img2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.img3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.img4 {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+/*---------------------------*/
+
+/*Styling af video*/
+.html_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+/*---------------------------*/
+
 /*Alt Media@*/
 @media (max-width: 900px) {
   h1 {
     font-size: 5rem;
+  }
+
+  .billede_container {
+    gap: 1rem;
+  }
+
+  video {
+    width: 320%;
+    height: 240%;
+    margin-right: 1rem;
   }
 }
 
@@ -130,6 +178,10 @@ hr.skift_hr {
     padding: 0.5rem;
     font-size: 0.7rem;
     font-weight: 300;
+  }
+
+  .billede_container {
+    gap: 0.5rem;
   }
 }
 
